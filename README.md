@@ -1,6 +1,3 @@
-# Pg-Cluster-Test
-Pg-Cluster-Test  
-docker swarm init --advertise-addr=IP  
-docker node update --label-add type=primary hostname  
-docker stack deploy --compose-file=./docker-compose.yml pg-stack   
+# PostgresSql Replication for Docker
 
+Read this [blog post](https://medium.com/@2hamed/replicating-postgres-inside-docker-the-how-to-3244dc2305be).
