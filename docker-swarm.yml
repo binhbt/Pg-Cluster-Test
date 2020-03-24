@@ -10,6 +10,8 @@ services:
       - POSTGRES_DB=hamed
       - PG_REP_USER=rep
       - PG_REP_PASSWORD=123456
+    ports:
+      - 5432:5432    
     networks:
       default:
         aliases:
@@ -23,6 +25,8 @@ services:
       - PG_REP_USER=rep
       - PG_REP_PASSWORD=123456
       - PG_MASTER_HOST=pg_master
+    ports:
+      - 5433:5432    
     networks:
       default:
         aliases:
